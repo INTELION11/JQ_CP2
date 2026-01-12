@@ -1,16 +1,19 @@
-# Vl 2nd Types of Lists Notes
-#this is new 
-import random as r
-print("hellow world")
-num = 1000
-LIGHT_GREEN = "\033[92m"
-RESET = "\033[0m" # Code to reset the text color to default
+# JQ 3rd List Notes
 
-while True:
-    
-    two = r.random()
-    three = two * 10000
-    yes = num * three
-    print(f"{LIGHT_GREEN}  {int(yes)}")
+#lists
+siblings = ["Alex", "Katie","Andrwe","Tia","Treyson","Xavier","Jake"]
+siblings[-1] = "DOW"
+siblings.append("Alex")
+print(siblings)
+# categories, data storage
 
-    num = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+# tuples
+white = (255,255,255)
+#white[1] = 0
+print(white[0])
+red,green,blue = white
+print(red)
+
+#level info,start point information, preset data, 
+fruits = {"apple","banana","grape","orange","pear","pinaple","orange"}
+print(fruits)

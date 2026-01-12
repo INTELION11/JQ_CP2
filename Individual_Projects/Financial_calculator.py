@@ -20,18 +20,20 @@ def save_goal():
     print(f"it will take you: {total_time} {contri_time} to reach your goal")
     return
 def compund_interest():
-    def is_int(intem):
-        try:  
-            intem = int(intem)  # must be integer for factorial  
-            return intem
-        except ValueError:  
-            print("Please try again") 
     start = is_int(input("Starting Amount: "))
     rate = is_int(input("Interest rate: "))
     years = is_int(input("Years saved: "))
     rate =  rate/100
     rate = rate + 1 
     for i in range(1,years):
+        start = start*rate
+    print(start)
+def sales_price():
+    start = is_int(input("Starting Amount: "))
+    sales = is_int(input("what is the discount rate? "))
+    discount = (100 - sales)/100
+    finalle = start*discount
+    print(finalle)
 
 
 def run_time():
