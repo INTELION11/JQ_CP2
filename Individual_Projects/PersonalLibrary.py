@@ -74,6 +74,7 @@ def search():
   
 # main menu loop  
 running = True  
+
 while running:  
     # print main menu  
     print("\nType the number for the action you would like to do \n1. View \n2. Add \n3. Remove \n4. Search \n 5. Exit")  
