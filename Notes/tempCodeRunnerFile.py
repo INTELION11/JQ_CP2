@@ -1,0 +1,1 @@
+with open("Notes/sample.txt","r") as file:
