@@ -1,0 +1,4 @@
+-Time might be off
+-wanted feature: slow printing
+-1st release version
+-no password or other info
