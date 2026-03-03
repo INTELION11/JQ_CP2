@@ -40,3 +40,31 @@ def triangleism(recursion,turt):
     main(recursion,turt)
 
 turt = t.Turtle()
+# define triangleism with recursion, turt  
+#     define drawTriangle with points, turt  
+#         turt lift pen  
+#         turt move to first point  
+#         turt lower pen  
+#         turt move to second point  
+#         turt move to third point  
+#         turt move back to first point  
+#  
+#     define getMid with p1, p2  
+#         return midpoint between p1 and p2  
+#  
+#     define sirpin with points, degree, turt  
+#         call drawTriangle with points, turt  
+#         if degree greater than 0  
+#             call sirpin with [points[0], getMid(points[0], points[1]), getMid(points[0], points[2])], degree-1, turt  
+#             call sirpin with [points[1], getMid(points[0], points[1]), getMid(points[1], points[2])], degree-1, turt  
+#             call sirpin with [points[2], getMid(points[2], points[1]), getMid(points[0], points[2])], degree-1, turt  
+#  
+#     define main with recursion, turt  
+#         myWin equal to screen  
+#         myPoints equal to [[-100, -50], [0, 100], [100, -50]]  
+#         call sirpin with myPoints, recursion, turt  
+#         myWin wait for exit click  
+#  
+#     call main with recursion, turt  
+#  
+# turt equal to new Turtle  
