@@ -1,6 +1,7 @@
 ## Grade Book
 [Grade Book](docs/Screenshot%202026-03-30%208.27.56%20PM.png)  
 
+
 ***
 This project is a program for managing your classroom grades. It lets you add students, record and update grades, and view class statistics and summaries. The program uses simple file handling to keep your grades organized and saved.
 ***
