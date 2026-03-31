@@ -4,10 +4,10 @@
 import csv    
 import os    
     
-DOCS_FOLDER = "Individual_Projects/grade book/docs"    
+docs_folder = "Individual_Projects/grade book/docs"    
     
 # make shure the docs folder exists    
-os.makedirs(DOCS_FOLDER, exist_ok=True)    
+os.makedirs(docs_folder, exist_ok=True)    
     
 class Student:    
     def __init__(self, name, student_id, grade_level):    
@@ -63,7 +63,7 @@ class Student:
     # say if the studnt is honor roll, good, or needs work based on avrage  
   
     def save_grades_to_csv(self):    
-        filename = os.path.join(DOCS_FOLDER, f"grades_{self.student_id}.csv")    
+        filename = os.path.join(docs_folder, f"grades_{self.student_id}.csv")    
         with open(filename, "w", newline='') as f:    
             writer = csv.writer(f)    
             for g in self.grades:    
@@ -72,7 +72,7 @@ class Student:
     # saves all grades for this studnt to a csv file just for them  
   
     def load_grades_from_csv(self):    
-        filename = os.path.join(DOCS_FOLDER, f"grades_{self.student_id}.csv")    
+        filename = os.path.join(docs_folder, f"grades_{self.student_id}.csv")    
         grades = []    
         if os.path.exists(filename):    
             with open(filename, "r") as f:    
