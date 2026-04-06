@@ -1,1 +1,3 @@
-with open("Notes/sample.txt","r") as file:
+def sub():
+    root.count -= 1
+    lbl["text"] = str(root.count)
