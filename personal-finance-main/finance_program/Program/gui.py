@@ -37,7 +37,7 @@ class tkinterApp(tk.Tk):
  
         # iterating through a tuple consisting
         # of the different page layouts
-        for F in (LoginSignup, Login, Signup, SignupEnterPass, MainMenu, Savings,Budgeting):
+        for F in (MainMenu, Budgeting, Savings):
  
             frame = F(container, self)
  
@@ -48,7 +48,7 @@ class tkinterApp(tk.Tk):
  
             frame.grid(row = 0, column = 0, sticky ="nsew")
  
-        self.show_frame("LoginSignup")
+        self.show_frame("MainMenu")
  
     # to display the current frame passed as
     # parameter
@@ -399,7 +399,7 @@ class MainMenu(tk.Frame):
             activebackground="grey", 
             activeforeground="white", 
             overrelief="solid", 
-            command = lambda : controller.show_frame(Budgeting)
+            command = lambda : controller.show_frame("Budgeting")
             )
         
         savings_goal_tracker_button = tk.Button(self, 
